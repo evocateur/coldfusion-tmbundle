@@ -1,0 +1,101 @@
+			cf(
+				 abort|applet|application|argument|associate|break|cache|calendar|case|catch
+				|chart|chartdata|chartseries|col|collection|component|content|cookie
+				|defaultcase|directory|document|documentitem|documentsection|dump|else|elseif
+				|error|execute|exit|file|flush|form|formgroup|formitem|ftp|function|grid
+				|gridcolumn|gridrow|gridupdate|header|htmlhead|http|httpparam|if|import|include
+				|index|input|insert|invoke|invokeargument|ldap|location|lock|log|login
+				|loginuser|logout|loop|mail|mailparam|mailpart|module|NTauthenticate|object
+				|objectcache|output|param|pop|processingdirective|procparam|procresult|property
+				|query|queryparam|registry|report|reportparam|rethrow|return|savecontent
+				|schedule|script|search|select|set|setting|silent|slider|storedproc|switch
+				|table|textarea|throw|timer|trace|transaction|tree|treeitem|try|update|wddx|xml
+			)
+			
+			cf(
+ abort|app(let|lication)|argument|associate
+|break
+|cache|calendar|case|catch|chart(data|series)?|col|collection|component|content|cookie
+|defaultcase|directory|document(item|section)?|dump
+|else(if)?|error|execute|exit
+|file|flush|form(group|item)?|ftp|function
+|grid(column|row|update)?
+|header|htmlhead|http(param)?
+|if|import|include|index|input|insert|invoke(argument)?
+|ldap|location|lock|log(out)?|login(user)?|loop
+|mail(param|part)?|module
+|NTauthenticate
+|object(cache)?|output
+|param|pop|processingdirective|proc(param|result)|property
+|query(param)?
+|re(throw|turn|gistry|port(param)?)
+|savecontent|schedule|script|search|se(lec)?t(ting)?|silent|slider|storedproc|switch
+|table|textarea|throw|timer|trace|transaction|tree(item)?|try
+|update|wddx|xml
+			)
+
+			cf(
+ a(bort|pp(let|lication)|rgument|ssociate)|break
+|c(a(che|lendar|se|tch)|hart(data|series)?|o(l|llection|mponent|ntent|okie))
+|d(efaultcase|irectory|ocument(item|section)?|ump)|e(lse(if)?|rror|xecute|xit)
+|f(ile|lush|orm(group|item)?|tp|unction)|g(rid(column|row|update)?)
+|h(eader|tmlhead|ttp(param)?)|i(f|mport|n(clude|dex|put|sert|voke(argument)?))
+|l(dap|o(cation|ck|g(out)?|gin(user)?|op))|m(ail(param|part)?|odule)|NTauthenticate
+|o(bject(cache)?|utput)|p(aram|op|r(ocessingdirective|oc(param|result)|operty))
+|query(param)?|r(e(throw|turn|gistry|port(param)?))
+|s(avecontent|c(hedule|ript)|e(arch|(lec)?t(ting)?)|ilent|lider|toredproc|witch)
+|t(able|extarea|hrow|imer|r(ace|ansaction|ee(item)?|y))|update|wddx|xml
+				)
+
+'cfif', 'cfoutput', 'cfabort', 'cfapplet', 'cfapplication', 'cfargument', 'cfassociate', 'cfbreak', 'cfcache', 'cfcalendar', 'cfcase', 'cfcatch', 'cfchart', 'cfchartdata', 'cfchartseries', 'cfcol', 'cfcollection', 'cfcomponent', 'cfcontent', 'cfcookie', 'cfdefaultcase', 'cfdirectory', 'cfdocument', 'cfdocumentitem', 'cfdocumentsection', 'cfdump', 'cfelse', 'cfelseif', 'cferror', 'cfexecute', 'cfexit', 'cffile', 'cfflush', 'cfform', 'cfformgroup', 'cfformitem', 'cfftp', 'cffunction', 'cfgrid', 'cfgridcolumn', 'cfgridrow', 'cfgridupdate', 'cfheader', 'cfhtmlhead', 'cfhttp', 'cfhttpparam', 'cfimport', 'cfinclude', 'cfindex', 'cfinput', 'cfinsert', 'cfinvoke', 'cfinvokeargument', 'cfldap', 'cflocation', 'cflock', 'cflog', 'cflogin', 'cfloginuser', 'cflogout', 'cfloop', 'cfmail', 'cfmailparam', 'cfmailpart', 'cfmodule', 'cfNTauthenticate', 'cfobject', 'cfobjectcache', 'cfparam', 'cfpop', 'cfprocessingdirective', 'cfprocparam', 'cfprocresult', 'cfproperty', 'cfquery', 'cfqueryparam', 'cfregistry', 'cfreport', 'cfreportparam', 'cfrethrow', 'cfreturn', 'cfsavecontent', 'cfschedule', 'cfscript', 'cfsearch', 'cfselect', 'cfset', 'cfsetting', 'cfsilent', 'cfslider', 'cfstoredproc', 'cfswitch', 'cftable', 'cftextarea', 'cfthrow', 'cftimer', 'cftrace', 'cftransaction', 'cftree', 'cftreeitem', 'cftry', 'cfupdate', 'cfwddx', 'cfxml'
+
+
+"block" tags (paired)
+------------
+
+case
+catch
+chart
+chartseries
+component
+defaultcase
+document
+documentitem
+documentsection
+execute
+form
+formgroup
+formitem
+function
+grid
+http
+if
+lock
+login
+loop
+mail
+mailpart
+output
+processingdirective
+query
+report
+savecontent
+script
+silent
+switch
+table
+textarea
+timer
+trace
+transaction
+tree
+try
+
+"empty" tags (unpaired)
+------------
+
+cf(abort|applet|application|argument|associate|break|cache|calendar|chartdata|col|collection|content|cookie|directory|dump|else|elseif|error|exit|file|flush|ftp|gridcolumn|gridrow|gridupdate|header|htmlhead|httpparam|import|include|index|input|insert|invoke|invokeargument|ldap|location|log|loginuser|logout|mailparam|module|NTauthenticate|object|objectcache|param|pop|procparam|procresult|property|queryparam|registry|reportparam|rethrow|return|schedule|search|select|set|setting|slider|storedproc|throw|treeitem|update|wddx|xml)
+
+-- uber complex
+
+cf(a(bort|pplet|pplication|rgument|ssociate)|break|c(ol|ache|alendar|hartdata|ollection|ontent|ookie)|d(irectory|ump)|e(lse|lseif|rror|xit)|f(ile|lush|tp)|grid(row|column|update)|h(eader|tmlhead|ttpparam)|i(mport|nclude|ndex|nput|nsert|nvoke(argument)?)|l(dap|ocation|og|oginuser|ogout)|m(ailparam|odule)|NTauthenticate|o(bject|bjectcache)|p(aram|op|roperty|roc(param|result))|queryparam|re(turn|throw|gistry|portparam)|s(et|etting|chedule|earch|elect|lider|toredproc)|t(hrow|reeitem)|update|wddx|xml)
