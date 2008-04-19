@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;cfargument name="$1" type="${2:any}"${3:${4: required="yes"}${5: default="$6"}}&gt;
+$0</string>
+	<key>name</key>
+	<string>cfargument</string>
+	<key>scope</key>
+	<string>text.html.cfml</string>
+	<key>tabTrigger</key>
+	<string>arg</string>
+	<key>uuid</key>
+	<string>197469EE-54AF-4C1C-B7C2-86B2D0904559</string>
+</dict>
+</plist>

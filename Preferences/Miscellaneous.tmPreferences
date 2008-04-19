@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Miscellaneous</string>
+	<key>scope</key>
+	<string>text.html.cfml</string>
+	<key>settings</key>
+	<dict>
+		<key>decreaseIndentPattern</key>
+		<string>(?x)
+		^\s*
+		(&lt;/(?!html)
+		  [A-Za-z0-9]+\b[^&gt;]*&gt;
+		|---&gt;
+		|&lt;cfelse(if\b[^&gt;]+)?&gt;
+		|\}
+		)</string>
+		<key>highlightPairs</key>
+		<array>
+			<array>
+				<string>(</string>
+				<string>)</string>
+			</array>
+			<array>
+				<string>{</string>
+				<string>}</string>
+			</array>
+			<array>
+				<string>[</string>
+				<string>]</string>
+			</array>
+			<array>
+				<string>“</string>
+				<string>”</string>
+			</array>
+			<array>
+				<string>&lt;</string>
+				<string>&gt;</string>
+			</array>
+			<array>
+				<string>#</string>
+				<string>#</string>
+			</array>
+		</array>
+		<key>increaseIndentPattern</key>
+		<string>(?x)
+		(&lt;(?!	# do NOT indent after these tags...
+			 area|base|br|col|frame|hr|li|html|img|input|link|meta|param|strong|span|td|th|em|del|ins|code|tt
+			|cf(a(bort|pplet|pplication|rgument|ssociate)|break|c(ol|ache|alendar|hartdata|ollection|ontent|ookie)|d(irectory|ump)|e(rror|xit)|f(ile|lush|tp)|grid(row|column|update)|h(eader|tmlhead|ttpparam)|i(mport|nclude|ndex|nput|nsert|nvoke(argument)?)|l(dap|ocation|og|oginuser|ogout)|m(ailparam|odule)|NTauthenticate|o(bject|bjectcache)|p(aram|op|roperty|roc(param|result))|queryparam|re(turn|throw|gistry|portparam)|s(et|etting|chedule|earch|elect|lider|toredproc)|t(hrow|reeitem)|update|wddx|xml)
+			[^&gt;]*/?&gt;
+		   )
+		  ([A-Za-z0-9]+)\b[^&gt;]*&gt;(?!.*&lt;/\2&gt;)
+		|&lt;!---(?!.*---&gt;)
+		|\{[^}"']*$
+		)</string>
+		<key>indentNextLinePattern</key>
+		<string>&lt;!DOCTYPE(?!.*&gt;)</string>
+		<key>shellVariables</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>TM_HTML_EMPTY_TAGS</string>
+				<key>value</key>
+				<string>area|base|basefont|br|col|frame|hr|img|input|isindex|link|meta|param|cf(a(bort|pplet|pplication|rgument|ssociate)|break|c(ol|ache|alendar|hartdata|ollection|ontent|ookie)|d(irectory|ump)|e(lse|lseif|rror|xit)|f(ile|lush|tp)|grid(row|column|update)|h(eader|tmlhead|ttpparam)|i(mport|nclude|ndex|nput|nsert|nvoke(argument)?)|l(dap|ocation|og|oginuser|ogout)|m(ailparam|odule)|NTauthenticate|o(bject|bjectcache)|p(aram|op|roperty|roc(param|result))|queryparam|re(turn|throw|gistry|portparam)|s(et|etting|chedule|earch|elect|lider|toredproc)|t(hrow|reeitem)|update|wddx|xml)</string>
+			</dict>
+		</array>
+	</dict>
+	<key>uuid</key>
+	<string>D90A86EE-8620-4FDC-BD95-1029D531C45D</string>
+</dict>
+</plist>

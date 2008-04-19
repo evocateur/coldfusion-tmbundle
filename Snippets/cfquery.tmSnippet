@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;cfquery name="$1"${3: dbtype="query"}${4: datasource="${5:#Session.dsn#}"}&gt;
+$0
+&lt;/cfquery&gt;</string>
+	<key>name</key>
+	<string>cfquery</string>
+	<key>scope</key>
+	<string>text.html.cfml</string>
+	<key>tabTrigger</key>
+	<string>query</string>
+	<key>uuid</key>
+	<string>86CDDB8F-0EDF-49E7-9A13-85E921263F2E</string>
+</dict>
+</plist>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;cfset ${1:var ${2:key}} = ${3:"$4"} /&gt;
+$0</string>
+	<key>name</key>
+	<string>cfset</string>
+	<key>scope</key>
+	<string>text.html.cfml</string>
+	<key>tabTrigger</key>
+	<string>set</string>
+	<key>uuid</key>
+	<string>29BFB0EE-7346-405C-B0BB-EFAB61E62912</string>
+</dict>
+</plist>

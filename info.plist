@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>deleted</key>
+	<array>
+		<string>1F3B8FEA-2CD6-46C9-B2F6-5D8A3019FBB2</string>
+	</array>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>33CA8E75-D56B-4ECD-8874-60BFB20B83F5</string>
+			<string>29BFB0EE-7346-405C-B0BB-EFAB61E62912</string>
+			<string>86CDDB8F-0EDF-49E7-9A13-85E921263F2E</string>
+			<string>878D0CF6-0E46-4BFF-A763-A878E208FE74</string>
+			<string>AB463488-1B0B-4747-AE3E-BE42952532C9</string>
+			<string>197469EE-54AF-4C1C-B7C2-86B2D0904559</string>
+		</array>
+		<key>submenus</key>
+		<dict/>
+	</dict>
+	<key>name</key>
+	<string>ColdFusion 8</string>
+	<key>ordering</key>
+	<array>
+		<string>B5D36353-8057-4272-A485-8C731A7173AF</string>
+		<string>D90A86EE-8620-4FDC-BD95-1029D531C45D</string>
+		<string>D9C1D7D4-9A46-451C-8666-6C4953C7BAFB</string>
+		<string>CE00A07D-36D9-4BBB-B533-AEFEC446EC42</string>
+		<string>3169778E-3ED5-408D-9B44-44B8325CAD0A</string>
+		<string>33CA8E75-D56B-4ECD-8874-60BFB20B83F5</string>
+		<string>93D17B74-60FA-4070-86C8-CE0F6141130F</string>
+		<string>6EE1160A-C5B8-4C16-9B21-00A6E0A88EDE</string>
+		<string>E4B4A35F-3770-4576-A38D-CB6611C93D66</string>
+		<string>29BFB0EE-7346-405C-B0BB-EFAB61E62912</string>
+		<string>86CDDB8F-0EDF-49E7-9A13-85E921263F2E</string>
+		<string>878D0CF6-0E46-4BFF-A763-A878E208FE74</string>
+		<string>AB463488-1B0B-4747-AE3E-BE42952532C9</string>
+		<string>197469EE-54AF-4C1C-B7C2-86B2D0904559</string>
+	</array>
+	<key>uuid</key>
+	<string>2057B641-D562-4351-8B6D-9F1ADCED0F40</string>
+</dict>
+</plist>
