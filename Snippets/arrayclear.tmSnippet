@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>arrayclear</string>
 	<key>scope</key>
-	<string>text.html.cfm</string>
+	<string>text.html.cfml</string>
 	<key>tabTrigger</key>
 	<string>arrayclear</string>
 	<key>uuid</key>
