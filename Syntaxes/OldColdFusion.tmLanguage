@@ -4,9 +4,7 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>cfm</string>
-		<string>cfml</string>
-		<string>cfc</string>
+		<string></string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>(?x)
@@ -310,7 +308,7 @@
 		</dict>
 	</dict>
 	<key>scopeName</key>
-	<string>text.html.cfml</string>
+	<string></string>
 	<key>uuid</key>
 	<string>97CAD6F7-0807-4EB4-876E-DA9E9C1CEC14</string>
 </dict>
