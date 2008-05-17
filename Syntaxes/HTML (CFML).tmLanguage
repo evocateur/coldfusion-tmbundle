@@ -222,6 +222,44 @@
 			</array>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>(&lt;/?)(?i:(cf(servlet(param)?|textinput|graph(data)?)))</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.tag.cfml</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>invalid.deprecated.cfml</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(/?&gt;)</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>(&lt;/?)(?i:(cf(impersonate|authenticate)))</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.tag.cfml</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>invalid.illegal.cfml</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(/?&gt;)</string>
+		</dict>
+		<dict>
 			<key>include</key>
 			<string>#embedded-code</string>
 		</dict>
@@ -247,18 +285,7 @@
 		<key>cf-tag</key>
 		<dict>
 			<key>begin</key>
-			<string>(?x)(&lt;/?)(cf(
-                     a(bort|pp(let|lication)|rgument|ssociate)|break
-                    |c(a(che|lendar|se|tch)|hart(data|series)?|o(l|llection|mponent|ntent|okie))
-                    |d(efaultcase|irectory|ocument(item|section)?|ump)|e(lse(if)?|rror|xecute|xit)
-                    |f(ile|lush|orm(group|item)?|tp|unction)|g(rid(column|row|update)?)
-                    |h(eader|tmlhead|ttp(param)?)|i(f|mport|n(clude|dex|put|sert|voke(argument)?))
-                    |l(dap|o(cation|ck|g(out)?|gin(user)?|op))|m(ail(param|part)?|odule)|NTauthenticate
-                    |o(bject(cache)?|utput)|p(aram|op|r(ocessingdirective|oc(param|result)|operty))
-                    |query(param)?|r(e(throw|turn|gistry|port(param)?))
-                    |s(avecontent|c(hedule|ript)|e(arch|(lec)?t(ting)?)|ilent|lider|toredproc|witch)
-                    |t(able|extarea|hrow|imer|r(ace|ansaction|ee(item)?|y))|update|wddx|xml
-				))</string>
+			<string>(&lt;/?)(cf(i(n(sert|clude|terface|dex|put|voke(argument)?)|f|m(port|age))|o(utput|bject(cache)?)|a(ssociate|jax(import|proxy)|ppl(ication|et)|rgument|bort)|s(c(hedule|ript)|toredproc|ilent|prydataset|e(t(ting)?|lect|arch)|witch|lider|avecontent)|h(t(tp(param)?|mlhead)|eader)|c(hart(series|data)?|o(ntent|okie|l(lection)?|mponent)|a(se|che|tch|lendar))|t(hr(ow|ead)|imer|ooltip|extarea|able|r(y|ee(item)?|a(nsaction|ce)))|zip(param)?|NTauthenticate|d(i(v|rectory)|ocument(section|item)?|ump|efaultcase|binfo)|update|p(o(d|p)|df(subform|param|formparam)?|aram|r(int|o(c(param|essingdirective|result)|perty)|esent(er|ation(slide)?)))|e(lse(if)?|rror|x(change(c(on(nection|tact)|alendar)|task|filter|mail)|it|ecute))|query(param)?|f(tp|ile|orm(item|group)?|unction|eed|lush)|w(indow|ddx)|l(o(c(k|ation)|op|g(in(user)?|out)?)|dap|ayout(area)?)|re(t(hrow|urn)|port(param)?|gistry)|grid(column|update|row)?|xml|m(odule|enu(item)?|ail(par(t|am))?)|break))</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>

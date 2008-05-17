@@ -104,6 +104,18 @@
 			<key>include</key>
 			<string>#cfmx-functions</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:(GetK2ServerDocCount(Limit)?|IsK2Server(OnLine|DocCountExceeded|ABroker)|ParameterExists))\b</string>
+			<key>name</key>
+			<string>invalid.deprecated.cfml</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:(Is(Protected|Auth(orized|enticated))|Authenticated(Context|User)))\b</string>
+			<key>name</key>
+			<string>invalid.illegal.cfml</string>
+		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
@@ -111,30 +123,7 @@
 		<dict>
 			<key>match</key>
 			<string>(?x)
-\b(?i:
- Array((Ap|Pre)pend|Avg|Clear|(Delete|Insert)At|IsEmpty|Len|Max|Min|New|Resize|Set|Sort|Sum|Swap|ToList)
-|List((Ap|Pre)pend|ChangeDelims|(Contains|Find|ValueCount)(NoCase)?|(Delete|Get|Insert|Set)At
-|First|Last|Len|Qualify|Rest|Sort|ToArray)|A(sc|tn)|(Binary|Charset)(De|En)code|Bit(And|Mask(Clear|Read
-|Set)|Not|Or|SHLN|SHRN|Xor)|Abs|A?(Sin|Cos)|AddSOAPRe(quest|sponse)Header|Ceiling|Chr|Compare(NoCase)?
-|Create(Object|UUID|((ODBC)?(Date(Time)?|Time))|TimeSpan)|Date(Add|Co(mpare|nvert)|Diff|Format|Part)
-|Day((sIn|Of)(Week(AsString)?|Year|Month))?|FirstDayOfMonth|De(cimalFormat|leteClientVariable)?
-|(De|In)crementValue|(De|En)crypt(Binary)?|(R|L|C)?(Trim|Justify)|(Directory|File)Exists|Fix|(Format
-|Input)BaseN|(RE)?(Find|Replace)(NoCase|OneOf|List)?|(Duplic|Evalu)ate|Exp(andPath)?|Get(AuthUser
-|Encoding|Exception|GatewayHelper|PageContext|TickCount|TimeZoneInfo|Token|Base(Tag(Data|List))
-|(ClientVariables|Function)List|(Base|Current|(Directory|File)From)(Template)?Path|Http(RequestData
-|TimeString)|Local(e(DisplayName)?|HostIP)|Met(ric|a)Data|Profile(Sections|String)|Temp(Directory|File)
-|SOAPRe(sponse|quest)(Header)?)|Hash|Hour|IIf|In(ser)?t|HTML(Code|Edit)Format|Is(Array|Binary|Boolean
-|CustomFunction|Date|DebugMode|Defined|LeapYear|LocalHost|Numeric(Date)?|Object|Query|SimpleValue
-|SOAPRequest|Struct|UserInRole|Valid|WDDX|XML(Attribute|Doc|Elem|Node|Root)?)|JavaCast|(L|U)Case|Left
-|Len|Log(10)?|LS(((Euro)?Currency|Date|Number|Time)Format|Is(Currency|Date|Numeric)|Parse((Euro)?
-Currency|DateTime|Number))|Max|Mi(d|n|nute)|Month(AsString)?|Now|Right|Round|Second|SendGatewayMessage
-|ParseDateTime|Pi|(Dollar|JSString|Number|Paragraph|Time|YesNo)Format|PreserveSingleQuotes|Rand(omize
-|Range)?|Qu(arter|(ery(Add(Column|Row)|New|SetCell))|otedValueList)|Span(Ex|In)cluding|Sqr|StripCR|Sgn
-|Re(leaseComObject|moveChars|peatString|verse)|Set(Encoding|Locale|ProfileString|Variable)
-|Struct(Append|Clear|Co(py|unt)|Delete|Find(Key|Value)?|Get|Insert|IsEmpty|Key(Array|Exists|List)|New
-|Sort|Update)|Tan|To(Base64|Binary|Script|String)|URL(Decode|(Encoded|Session)(Format)?)|Val(ueList)?
-|Week|Wrap|WriteOutput|Year|Xml(ChildPos|ElemNew|Format|GetNodeType|New|Parse|Search|Transform|Validate)
-)\b</string>
+\b(?i:(R(ight|ound|Trim|e(p(eatString|lace(NoCase|List)?)|verse|leaseComObject|moveChars)|Justify|E(Replace(NoCase)?|Match(NoCase)?|Find(NoCase)?)|and(Range|omize)?)|Ge(nerateSecretKey|t(ReadableImageFormats|GatewayHelper|Met(aData|ricData)|BaseT(emplatePath|ag(Data|List))|SOAPRe(sponse(Header)?|quest(Header)?)|Http(RequestData|TimeString)|C(o(ntextRoot|mponentMetaData)|urrentTemplatePath|lientVariablesList)|T(i(ckCount|meZoneInfo)|oken|emp(Directory|latePath|File))|DirectoryFromPath|UserRoles|P(ageContext|r(interInfo|ofileS(tring|ections)))|E(ncoding|xception)|F(ile(Info|FromPath)|unctionList)|WriteableImageFormats|Local(HostIP|e(DisplayName)?)|AuthUser))|Xml(GetNodeType|Search|New|ChildPos|Transform|Parse|ElemNew|Validate|Format)|M(i(n(ute)?|d)|onth(AsString)?|ax)|Bi(nary(Decode|Encode)|t(Xor|Mask(Read|Set|Clear)|SH(RN|LN)|Not|Or|And))|S(tr(ipCR|uct(Get|Sort|New|C(o(unt|py)|lear)|I(sEmpty|nsert)|Delete|Update|Key(Exists|List|Array)|Find(Value|Key)?|Append))|in|pan(Including|Excluding)|e(ndGatewayMessage|cond|t(ProfileString|Encoding|Variable|Locale)|rializeJSON)|qr|leep|gn)|H(our|TML(CodeFormat|EditFormat)|ash)|Ye(sNoFormat|ar)|N(ow|umberFormat)|C(h(arset(Decode|Encode)|r)|o(s|mpare(NoCase)?)|eiling|Justify|reate(Time(Span)?|O(DBC(Time|Date(Time)?)|bject)|Date(Time)?|UUID))|T(imeFormat|o(B(inary|ase64)|S(cript|tring))|an|rim)|I(s(X(ML|ml(Root|Node|Doc|Elem|Attribute))|B(inary|oolean)|S(truct|impleValue|OAPRequest)|Numeric(Date)?|CustomFunction|I(nstanceOf|mage(File)?)|Object|D(e(fined|bugMode)|DX|ate)|User(In(Role|AnyRole)|LoggedIn)|JSON|PDF(Object|File)|Valid|Query|WDDX|L(ocalHost|eapYear)|Array)|n(sert|crementValue|t|putBaseN)|If|mage(R(otate(DrawingAxis)?|e(size|ad(Base64)?))|G(et(B(ufferedImage|lob)|Height|IPTC(Metadata|Tag)|EXIF(Metadata|Tag)|Width)|rayscale)|XORDrawingMode|Blur|S(h(ear(DrawingAxis)?|arpen)|caleToFit|et(BackgroundColor|Drawing(Stroke|Color|Transparency)|Antialiasing))|Ne(w|gative)|C(opy|learRect|rop)|Translate(DrawingAxis)?|Info|Overlay|Draw(R(oundRect|ect)|BeveledRect|CubicCurve|Text|Oval|Point|QuadraticCurve|Line(s)?|Arc)|Paste|Flip|Write(Base64)?|AddBorder))|D(irectoryExists|o(tNetToCFType|llarFormat)|uplicate|e(serializeJSON|c(imalFormat|r(ypt(Binary)?|ementValue))|leteClientVariable)|E|a(y(sIn(Month|Year)|Of(Year|Week(AsString)?))?|te(Co(nvert|mpare)|Diff|Part|Format|Add)))|U(RL(SessionFormat|Decode|EncodedFormat)|Case)|J(SStringFormat|avaCast)|P(i|ar(seDateTime|agraphFormat)|re(serveSingleQuotes|cisionEvaluate))|E(ncrypt(Binary)?|valuate|xp(andPath)?)|V(erifyClient|al(ueList)?)|Qu(otedValueList|ery(SetCell|New|ConvertForGrid|Add(Row|Column))|arter)|F(i(nd(NoCase|OneOf)?|le(Read(Binary|Line)?|Move|Set(LastModified|A(ccessMode|ttribute))|C(opy|lose)|IsEOF|Open|Delete|Exists|Write(Line)?)|rstDayOfMonth|x)|ormatBaseN)|W(eek|r(iteOutput|ap))|L(S(NumberFormat|CurrencyFormat|TimeFormat|Is(Numeric|Currency|Date)|DateFormat|Parse(Number|Currency|DateTime|EuroCurrency)|EuroCurrencyFormat)|ist(Rest|GetAt|S(ort|etAt)|C(hangeDelims|ontains(NoCase)?)|ToArray|InsertAt|DeleteAt|Prepend|ValueCount(NoCase)?|Qualify|Fi(nd(NoCase)?|rst)|L(en|ast)|Append)|og(10)?|Case|Trim|e(n|ft)|Justify)|A(sc|tn|Sin|ddSOAPRe(sponseHeader|questHeader)|Cos|jax(OnLoad|Link)|rray(Resize|M(in|ax)|S(ort|um|et|wap)|New|Clear|ToList|I(s(Defined|Empty)|nsertAt)|DeleteAt|Prepend|Len|A(ppend|vg))|bs)))\b</string>
 			<key>name</key>
 			<string>support.function.cfml</string>
 		</dict>
