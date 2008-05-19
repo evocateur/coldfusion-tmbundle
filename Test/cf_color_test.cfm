@@ -843,7 +843,7 @@
 	<cfformgroup>
 	<cfformitem>
 	<cfftp>
-	<cffunction></cffunction>
+	<cffunction name="test"></cffunction>
 	<cfgraph>
 	<cfgraphdata>
 	<cfgrid>
