@@ -36,6 +36,88 @@
 		</dict>
 		<dict>
 			<key>begin</key>
+			<string>(&lt;)(cf[a-z]+)(?=[^&gt;]*&gt;&lt;/\2&gt;)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.tag.cfml</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.tag.cfml</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(&gt;(&lt;)/)(\2)(&gt;)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.tag.cfml</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>meta.scope.between-tag-pair.cfml</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.tag.cfml</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.tag.cfml</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.tag.any.cfml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>string.quoted.double.cfml</string>
+						</dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function-name.cfml</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.end</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(?&lt;=cffunction name=)(")([_$a-zA-Z][_$a-zA-Z0-9]+)(")</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.cfml</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#tag-stuff</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
 			<string>(?:^\s+)?(&lt;)((?i:cfquery))\b(?![^&gt;]*/&gt;)</string>
 			<key>captures</key>
 			<dict>
@@ -265,10 +347,6 @@
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>#cffunction</string>
-		</dict>
-		<dict>
-			<key>include</key>
 			<string>#cf-tag</string>
 		</dict>
 		<dict>
@@ -306,6 +384,33 @@
 			<key>patterns</key>
 			<array>
 				<dict>
+					<key>captures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>string.quoted.double.cfml</string>
+						</dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function-name.cfml</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.end</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(?&lt;=cffunction name=)(")([_$a-zA-Z][_$a-zA-Z0-9]+)(")</string>
+				</dict>
+				<dict>
 					<key>include</key>
 					<string>source.cfml</string>
 				</dict>
@@ -336,61 +441,6 @@
 				<dict>
 					<key>include</key>
 					<string>#cfcomment</string>
-				</dict>
-			</array>
-		</dict>
-		<key>cffunction</key>
-		<dict>
-			<key>begin</key>
-			<string>&lt;(cffunction)</string>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.tag.cfml</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>&gt;</string>
-			<key>name</key>
-			<string>meta.tag.language.cfml.function</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>captures</key>
-					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>string.quoted.double.cfml</string>
-						</dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.string.begin</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.function-name.cfml</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.string.end</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>(?&lt;=name=)(")([A-Za-z$_0-9]+)(")</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>source.cfml</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#tag-stuff</string>
 				</dict>
 			</array>
 		</dict>
