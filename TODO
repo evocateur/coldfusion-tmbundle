@@ -1,7 +1,4 @@
-- finish classifying snippets
-- alphabetize the bloody things
 - optimize folding and indent/outdent settings
 - look at simplifying function regexp
-- update function list to CF8
-- update snippets for CF8
-- streamline some snippets, make the tab stops more intelligent
+- add PHP-style method hinting and function reference window thingy
+
